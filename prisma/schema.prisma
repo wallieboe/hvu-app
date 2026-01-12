@@ -7,6 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql" // Changed to postgresql as requested
+  url      = env("DATABASE_URL")
 }
 
 // NextAuth Models
